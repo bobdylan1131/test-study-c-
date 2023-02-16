@@ -1,0 +1,48 @@
+关于两个字符的拷贝
+#include<stdio.h>
+int main()
+{
+char arr1[]="###########";
+char arr2[]="bit";
+is_mystrcpy(arr1,arr2)
+printf("%s",arr1);
+return 0;
+}
+
+
+is_my(char *arr1,char*arr2)                              
+{
+while(1)                 
+{
+if(*arr2!='\0)
+{
+*arr1=*arr2;     
+arr1++;
+arr2++;
+}
+else
+break;
+} 
+                                              进行对两个之间的地址交换
+
+is_my(char *arr1,char*arr2)  
+{
+while(*arr1++=*arr2++)
+ {
+;                                          进行对第一个代码的简化
+ }
+}
+
+
+#include<assert.h>
+is_my(char *arr1,char*arr2)  
+{     
+assert(arr1!=NULL);
+assert(arr2!=NULL);                              加入断言assert可以判断该代码的错误的地方包含              #include<assert.h>
+
+while(*arr1=*arr2) 加入断言         
+{
+;
+}
+
+
