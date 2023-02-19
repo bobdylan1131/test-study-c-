@@ -1,0 +1,13 @@
+数组指针和指针数组
+数组指针就是保存数组地址的指针
+ void print1(int (*pr)[5],int x, int y)
+{
+	 for (int i = 0; i < x; i++)
+	 {
+		 for (int j = 0; j < y; j++)
+		 {
+			 printf("%d ", *(*pr + i) + j);
+		 }
+		 printf("\n");
+   
+   而指针数组本质上还是一个数组，不够改变为存放指针而已；
