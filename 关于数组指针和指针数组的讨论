@@ -9,5 +9,7 @@
 			 printf("%d ", *(*pr + i) + j);
 		 }
 		 printf("\n");
+		 例如：int(*pr)[10]=&arr;
    
    而指针数组本质上还是一个数组，不够改变为存放指针而已；
+   int *pr[3]={&arr1,&arr2,&arr3}
